@@ -1,11 +1,6 @@
 # Plugin-Cordova-CryptographyAES
 do enkripsi and dekripsi using AES algorithm on Cordova 
 
-
-# cordova-plugin-sms #
-
-Plugin to operate SMS, send / list / intercept / delete / restore, also with bluetooth detection.
-
 ### How to Use? ###
 
 Use the plugin with Cordova CLI:
@@ -17,23 +12,9 @@ Use the plugin with Cordova CLI:
 ### Methods ###
 
 ```javascript
-sendSMS(address(s), text, successCallback, failureCallback);
-listSMS(filter, successCallback, failureCallback);
-deleteSMS(filter, successCallback, failureCallback);
+doEnkripsi(text, key, successCallback, failureCallback);
 
-startWatch(successCallback, failureCallback);
-stopWatch(successCallback, failureCallback);
-
-enableIntercept(on_off, successCallback, failureCallback);
-restoreSMS(msg_or_msgs, successCallback, failureCallback);
-
-setOptions(options, successCallback, failureCallback);
-```
-
-### Events ###
-
-```javascript
-'onSMSArrive'
+doDekripsi(text, key, successCallback, failureCallback);
 ```
 
 ### Quick Start ###
