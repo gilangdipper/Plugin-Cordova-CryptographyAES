@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="net.alkhansa.cryptographyaesplugin" version="1.0.0">
+	<name>cryptographyAES</name>
+	<author>Gilang Al Khansa</author>
+	<description>Get functionality from AES algorithm on Java</description>
+	<keywords>Cryptography</keywords>
+	<license>Apache 2.0 License</license>
+	<engines>
+		<engine name="cordova" version="4.0.2" />
+	</engines>
+	<js-module src="cryptographyAES.js" name="cryptographyAES">
+		<clobbers target="cryptographyAES" />
+	</js-module>
+	<platform name="android">
+		<!-- android-specific elements -->
+		<source-file src="src/android/cryptographyAES.java" target-dir="src/net/alkhansa/cryptographyaesplugin/" />
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="cryptographyAES" >
+				<param name="android-package" value="net.alkhansa.cryptographyaesplugin.cryptographyAES"/>
+			</feature>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+			<uses-permission android:name="android.permission.BROADCAST_SMS" />
+			<uses-permission android:name="android.permission.RECEIVE_SMS" />
+			<uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+			<uses-permission android:name="android.permission.RECEIVE_MMS" />
+			<uses-permission android:name="android.permission.READ_SMS" />
+			<uses-permission android:name="android.permission.WRITE_SMS" />
+			<uses-permission android:name="android.permission.SEND_SMS" />
+		</config-file>
+	</platform>
+	<platform name="ios">
+	<!-- ios-specific elements -->
+	</platform>
+</plugin>
