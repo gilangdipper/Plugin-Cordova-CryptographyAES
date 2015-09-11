@@ -50,7 +50,7 @@ Check the [Example Code in test/index.html](https://github.com/floatinghotpot/co
 
 ### Credits ###
 
-The plugin is created and maintained by Raymond Xie.
+The plugin is created and maintained by Gilang Al Khansa.
 
 You can use it for FREE, it works in trial mode by default.
 
