@@ -1,5 +1,5 @@
 {
-  "name": "cryptographyAES",
+  "name": "cryptographyaes",
   "version": "0.1.0",
   "description": "Get functionality from AES algorithm on Java",
   "cordova": {
