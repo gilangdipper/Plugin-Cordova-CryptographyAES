@@ -42,11 +42,11 @@ doDekripsi(text, key, successCallback, failureCallback);
 
 Check the [API Reference](https://github.com/floatinghotpot/cordova-plugin-sms/blob/master/docs/)
 
-Check the [Example Code in test/index.html](https://github.com/floatinghotpot/cordova-plugin-sms/blob/master/test/index.html).
+Check the [Example Code in test/index.html](https://github.com/gilangdipper/Plugin-Cordova-CryptographyAES/tree/master/docs/index.html).
 
 ### Demo ###
 
-![ScreenShot](docs/sms.jpg)
+![ScreenShot](docs/Screenshot.jpg)
 
 ### Credits ###
 
