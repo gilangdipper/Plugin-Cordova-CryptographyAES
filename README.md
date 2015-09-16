@@ -5,7 +5,7 @@ do enkripsi and dekripsi using AES algorithm on Cordova
 
 Use the plugin with Cordova CLI:
 
-```cordova plugin add com.rjfun.cordova.sms```
+```cordova plugin add cryptographyaes```
 
 # API Overview #
 
@@ -21,12 +21,12 @@ doDekripsi(text, key, successCallback, failureCallback);
 
 ```bash
 	# create a demo project
-    cordova create test1 com.rjfun.test1 Test1
+    cordova create test1 net.alkhansa.test1 Test1
     cd test1
     cordova platform add android
     
     # now add plugin
-    cordova plugin add com.rjfun.cordova.sms
+    cordova plugin add cryptographyaes
     
     # copy the demo file
     rm -r www/*; cp plugins/com.rjfun.cordova.sms/test/* www/;
