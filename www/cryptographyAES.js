@@ -1,17 +1,17 @@
 var cordova = require('cordova');
 
 var cryptographyAES = {
-	doEncryption : function(text, successCallback, errorCallback) {
+	doEncryption : function(text, key, successCallback, errorCallback) {
 		cordova.exec(successCallback, errorCallback,
 		'cryptographyAES', // mapped to our native Java class called "CryptographyAes"
 		'doEncryption', // with this action name
-		[text]);
+		[text, key]);
 	},
-	doDecryption : function(text, successCallback, errorCallback) {
+	doDecryption : function(text, key, successCallback, errorCallback) {
 		cordova.exec(successCallback, errorCallback,
 		'cryptographyAES', // mapped to our native Java class called "CryptographyAes"
 		'doDecryption', // with this action name
-		[text]);
+		[text, key]);
 	}
 };
 
