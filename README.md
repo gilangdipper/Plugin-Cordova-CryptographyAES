@@ -1,11 +1,11 @@
-# Plugin-Cordova-CryptographyAES
+# cordova-plugin-cryptography-aes
 do enkripsi and dekripsi using AES algorithm on Cordova 
 
 ### How to Use? ###
 
 Use the plugin with Cordova CLI:
 
-```cordova plugin add cryptographyaes```
+```cordova plugin add cordova-plugin-cryptography-aes```
 
 # API Overview #
 
@@ -26,7 +26,7 @@ doDekripsi(text, key, successCallback, failureCallback);
     cordova platform add android
     
     # now add plugin
-    cordova plugin add cryptographyaes
+    cordova plugin add cordova-plugin-cryptography-aes
     
     # copy the demo file
     rm -r www/*; cp plugins/com.rjfun.cordova.sms/test/* www/;
