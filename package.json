@@ -1,26 +1,31 @@
 {
-  "name": "cryptographyaes",
-  "version": "0.1.0",
+  "name": "cordova-plugin-cryptography-aes",
+  "version": "1.0.0",
   "description": "Get functionality from AES algorithm on Java",
   "cordova": {
-    "id": "net.alkhansa.cryptographyaesplugin",
+    "id": "cordova-plugin-cryptography-aes",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gilangdipper/Plugin-Cordova-CryptographyAES.git"
+    "url": "https://github.com/gilangdipper/Plugin-Cordova-CryptographyAES.git"
   },
   "keywords": [
     "Cryptography",
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "aes"
   ],
   "engines": [
     {
       "name": "cordova",
-      "version": "4.0.2"
+      "version": ">=4.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=4.0.2"
     }
   ],
   "author": "Gilang Al Khansa",
